@@ -3,10 +3,10 @@ ________________________________________________________________________________
 **Introduction:** 
 This major project involves a COVID-19 self-assessment programmed in MATLAB and the Arduino Uno with its sensors being actuated. The purpose of this program is to check whether or not the user taking the self-assessment, is positive for COVID-19. Moreover, this self-assessment features a temperature sensor to check if the user has a fever. Finally, a self-assessment report (coded and opened from MATLAB) is given at the end if the user has no signs of COVID-19. The user is free to show their report at their workplace or institution, as proof that they are healthy.
 _________________________________________________________________________________________________________________________________________________________________________
-**Context**
+**Context:**
 This self-assessment consists of a built-in temperature sensor, followed by a series of mostly “Yes or No” questions. Afterwards, a text document (.txt) is saved on the user’s computer, that confirms the user is not infected of COVID-19, including their temperature reading. Compared to COVID-19 screening assessments on the internet, this one includes a temperature sensor, which gives a better outlook of the user’s likelihood of being tested positive/negative for COVID-19. This self-assessment also requires no internet to run, in case if there is any outage. In addition, this is a screening test which eliminates any concerns regarding privacy. Any website or mobile app may have the ability to steal your data and personal information, even if it’s just for a screening test. At last, the report is automatically written in a text document, which takes up less computer memory and space. PDFs and Word Documents (.docx files) tend to take longer to open and require internet (or some subscription) to download and open these files.
 _________________________________________________________________________________________________________________________________________________________________________
-**Technical Requerments/Specifications**
+**Technical Requerments/Specifications:**
 The system should…
 1.	Measure their temperature, to see if they are diagnosed with a fever. If their temperature is greater or equal to 37.5 degrees Celsius, the screening ends and the buzzer sound goes off from the board, beeping 3 times. It lets the user they may be infected with COVID-19.
 2.	Ask a couple of self-assessment questions (mostly “Yes or No” questions). Depending on what the user chooses, the screening test ends, and the buzzer goes off 1-3 times (which again, indicates that they are infected) or proceeds into the next phase of the test. If the buzzer beeps just once, it tells the user they are suspected, to have COVID-19.
@@ -16,13 +16,13 @@ The system should…
 _______________________________________________________________________________________________________________________________________________________________________
 **Components List**
 
-•	A Functional PC or Laptop
-•	1x Arduino Grove Uno Board
-•	1x Micro USB Cable
-•	1x Four-Wired Grove Cable
-•	1x Grove Temperature Sensor 
+1. A Functional PC or Laptop
+2. 1x Arduino Grove Uno Board
+3. 1x Micro USB Cable
+4. 1x Four-Wired Grove Cable
+5. 1x Grove Temperature Sensor 
 _______________________________________________________________________________________________________________________________________________________________________
-**Procedure**
+**Procedure:**
 1.	Get or buy any necessary parts (from components list) for the project.
 2.	Connect the Arduino Uno board to a working computer, using a Micro USB cable.
 3.	Connect the Grove Temperature Sensor into one side of a Grove Cable.
@@ -51,10 +51,11 @@ ________________________________________________________________________________
 26.	The difference (to the nearest tenths) is added to the code, to match the accuracy of the oral test to the screening test in MATLAB.
 27.	Add a secondary temperature test (based on the results), since the sensor takes a while to adapt to the changes in the temperature. The actual temperature will be recorded in the screening report.
 _______________________________________________________________________________________________________________________________________________________________________
-**Refrences**
+**Refrences:**
 1. Volts to Temperature Code: “Temperature Reading on Matlab and Plotting.” YouTube, Magesh Jayakumar, 28 Nov. 2015, https://youtu.be/gjDzFyzH_ck (Accessed 5 Dec. 2022.)
 
 *Code:*
+
 analog = voltMean/0.0048875;
 b = 3975;
 resistance = (1023 - analog) * 10000/analog;
