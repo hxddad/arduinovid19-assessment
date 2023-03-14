@@ -16,7 +16,7 @@ The system should…
 4.	A text file is automatically created in their desktop, confirming that they there are no signs for COVID-19. This text file includes their name, date of the report generated, and their recorded temperature.
 
 _______________________________________________________________________________________________________________________________________________________________________
-**Components List**
+**Components List:**
 
 1. A Functional PC or Laptop
 2. 1x Arduino Grove Uno Board
