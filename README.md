@@ -1,1 +1,1 @@
-# COVID-19-Screening-Assesment-w-MATLAB-Arduino-Uno
+# COVID-19-Screening-Assesment-w-MATLAB-Arduino
