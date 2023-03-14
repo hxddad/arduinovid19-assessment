@@ -57,11 +57,12 @@ ________________________________________________________________________________
 1. Volts to Temperature Code: “Temperature Reading on Matlab and Plotting.” YouTube, Magesh Jayakumar, 28 Nov. 2015, https://youtu.be/gjDzFyzH_ck (Accessed 5 Dec. 2022.)
 
 *Code:*
-
+```
 analog = voltMean/0.0048875;
 b = 3975;
 resistance = (1023 - analog) * 10000/analog;
 tempMean = (1/(log(resistance/10000)/b + 1/298.15) - 273.15);
+```
 
 2. COVID-19 Screening Algorithm: Covid-19 Ed/UC Algorithm - Shared Health. https://sharedhealthmb.ca/files/COVID-19-update.pdf. 
 _______________________________________________________________________________________________________________________________________________________________________
