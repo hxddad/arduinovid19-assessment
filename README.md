@@ -1,7 +1,7 @@
 # COVID-19-Screening-Assessment
 _________________________________________________________________________________________________________________________________________________________________________
 **Introduction:** 
-This major project involves a COVID-19 self-assessment programmed in MATLAB and the Arduino Uno with its sensors being actuated. The purpose of this program is to check whether or not the user taking the self-assessment, is positive for COVID-19. Moreover, this self-assessment features a temperature sensor to check if the user has a fever. Finally, a self-assessment report (coded and opened from MATLAB) is given at the end if the user has no signs of COVID-19. The user is free to show their report at their workplace or institution, as proof that they are healthy.
+This major project involves a COVID-19 self-assessment programmed in MATLAB & Java and the Arduino Uno with its sensors being actuated. The purpose of this program is to check whether or not the user taking the self-assessment, is positive for COVID-19. Moreover, this self-assessment features a temperature sensor to check if the user has a fever. Finally, a self-assessment report is given at the end if the user has no signs of COVID-19. The user is free to show their report at their workplace or institution, as proof that they are healthy.
 _________________________________________________________________________________________________________________________________________________________________________
 **Context:**
 This self-assessment consists of a built-in temperature sensor, followed by a series of mostly “Yes or No” questions. Afterwards, a text document (.txt) is saved on the user’s computer, that confirms the user is not infected of COVID-19, including their temperature reading. Compared to COVID-19 screening assessments on the internet, this one includes a temperature sensor, which gives a better outlook of the user’s likelihood of being tested positive/negative for COVID-19. This self-assessment also requires no internet to run, in case if there is any outage. In addition, this is a screening test which eliminates any concerns regarding privacy. Any website or mobile app may have the ability to steal your data and personal information, even if it’s just for a screening test. At last, the report is automatically written in a text document, which takes up less computer memory and space. PDFs and Word Documents (.docx files) tend to take longer to open and require internet (or some subscription) to download and open these files.
@@ -24,37 +24,11 @@ ________________________________________________________________________________
 4. 1x Four-Wired Grove Cable
 5. 1x Grove Temperature Sensor 
 _______________________________________________________________________________________________________________________________________________________________________
-**Procedure:**
-1.	Get or buy any necessary parts (from components list) for the project.
-2.	Connect the Arduino Uno board to a working computer, using a Micro USB cable.
-3.	Connect the Grove Temperature Sensor into one side of a Grove Cable.
-4.	Connect the other side of the cable to the “A0” pin on the board.
-5.	Once the user starts the test, let them know through a pop-up window that their temperature will be measured, with instructions. The measuring will take 30 seconds, because the temperature sensor takes time to adjust from the room temperature to the user’s forehead.
-6.	Make a for loop, making 100 measurements (iterations) for about 15-20 seconds.
-7.	The D6 LED is also blinking to each iteration to let the user know, that the temperature is being measured.
-8.	The sum volts from the loop are averaged.
-9.	That mean volts is converted to the analog to the resistance and to the average temperature, with a constant with b = 3975. 
-10.	Whatever their temperature is, make sure the user sees it in the command window.
-11.	If their temperature is greater than 37.5 degrees Celsius”, the D5 buzzer on the board goes off 3 times and the LED light blinks 3 times. Then, a message pops up a window indicating they may be positive for COVID-19 with a fever, with next steps to take (ex. Call 911). Otherwise, they can proceed with the test.
-12.	Ask the user screening questions. If any of the answers are “yes”, the same output will be in step 11.  If they are suspected to have COVID-19, the buzzer beeps once and the LED light flashes. This is followed by a message displaying they are suspected to be infected, and further instructions. If the user answers “no”, they continue the test. 
-13.	If they answer “no” to all the questions, ask them to prompt their name in the command window, then press “enter” on the keyboard. 
-14.	If the user doesn’t prompt anything, and presses enter, their name will be replaced with “the individual”. 
-15.	Create a message in a string, indicating their name, their temperature, the date, time and confirmation that they are negative for COVID-19.
-16.	That message will be written in a file called “screening_results.txt”, 
-17.	The file will be created or overwritten in the user’s desktop, where it’s easily accessible. Note that the directory of where the file is saved may be different on another computer (instead of “C:\Users\yazan\OneDrive\Desktop\screening_results.txt”)
-18.	Make the file have the ability to be overwritten with new info. If the user does a new test. 
-19.	Write “fclose(“all”)” at the end to close all files that takes up any unnecessary memory in the computer. It also allows the user to delete their report, if they simply don’t need it anymore. Otherwise, there will be an error saying something like: “the action cannot be completed because file is still open…”. 
-20.	Measure and record the temperature using both the Grove Temperature Sensor and a basic home thermometer, both on the forehead. Repeat 20 times.
-21.	Take the mean of both readings.
-22.	Calculate the difference between the mean of both readings.
-23.	Measure and record the temperature using both the Grove Temperature Sensor on the forehead and a basic home thermometer orally (below the tongue). Repeat 10 times.
-24.	Take the mean of both readings.
-25.	Calculate the difference between the mean of both readings.
-26.	The difference (to the nearest tenths) is added to the code, to match the accuracy of the oral test to the screening test in MATLAB.
-27.	Add a secondary temperature test (based on the results), since the sensor takes a while to adapt to the changes in the temperature. The actual temperature will be recorded in the screening report.
+**Additional Material:**
+Coronavirus has gone down significantly here in Ontario as of April 2023, because we were able to protect each other. COVID-19 is still around and can still affect anybody. This is why it is still our job to protect each other and take precautions to prevent another wave. Hur & Chang (2020) states that a self-report questionnaire can minimize the spread of COVID-19 and potentially helpful to overcome the pandemic. Moreover, contactless healthcare services have been proven to be very effective in the post-pandemic, due to the accelerating technological developments (Lee & Lee, 2021). Digitization is helping companies and institutions overcome obstacles relating to the spread of COVID-19 (Almeida et al., 2020). York University’s YU Screening tool is a good way of screening ourselves of whether to show up on campus or stay home. Whitelaw et al. (2020) states that digital technology has opened many ways to help facilitate and respond the pandemic to combat the more difficult issues. Whitelaw et al. also noted that countries like South Korea have integrated digital technology to combat these challenges, which could be a cause of their curve of infected cases to be flattened. This caused South Korea to have 0.5 COVID-19 deaths per 100,000 people (Whitelaw et al., 2020). 
 _______________________________________________________________________________________________________________________________________________________________________
 **Refrences:**
-1. Volts to Temperature Code: “Temperature Reading on Matlab and Plotting.” YouTube, Magesh Jayakumar, 28 Nov. 2015, https://youtu.be/gjDzFyzH_ck (Accessed 5 Dec. 2022.)
+*1. Volts to Temperature Code:* “Temperature Reading on Matlab and Plotting.” YouTube, Magesh Jayakumar, 28 Nov. 2015, https://youtu.be/gjDzFyzH_ck (Accessed 5 Dec. 2022.)
 
 *Code:*
 ```
@@ -64,5 +38,27 @@ resistance = (1023 - analog) * 10000/analog;
 tempMean = (1/(log(resistance/10000)/b + 1/298.15) - 273.15);
 ```
 
-2. COVID-19 Screening Algorithm: Covid-19 Ed/UC Algorithm - Shared Health. https://sharedhealthmb.ca/files/COVID-19-update.pdf. 
+*2. COVID-19 Screening Algorithm:* Covid-19 Ed/UC Algorithm - Shared Health. https://sharedhealthmb.ca/files/COVID-19-update.pdf. 
+
+*3. Firmata4j Libraries for Arduino Uno:* Kurbatov, Oleg, and Dominik Stadler. “Firmata4j.” Firmata4j Source Codes, GitHub, 2014, github.com/kurbatov/firmata4j/tree/master/src/main/java/org/firmata4j. Accessed 2 Apr. 2023.
+
+*4. Making Dialogue Boxes Using Swing & JOptionPane:* “How to Make Dialogs (the JavaTM Tutorials > Creating a GUI with JFC/Swing > Using Swing Components).” Docs.oracle.com, Oracle, docs.oracle.com/javase/tutorial/uiswing/components/dialog.html.
+
+*5. Java.io.BufferedWriter Class Methods in Java:* Kumarar, Gulshan, et al. “Java.io.BufferedWriter Class Methods in Java.” GeeksforGeeks, 15 Aug. 2022, www.geeksforgeeks.org/io-bufferedwriter-class-methods-java/.
+
+*6. LocalDateTime & DateTimeFormater:* “Java LocalDateTime - Javatpoint.” www.javatpoint.com, www.javatpoint.com/java-localdatetime.
+
+*7. Standard Library from Princeton:* “StdDraw.” Introcs.cs.princeton.edu, introcs.cs.princeton.edu/java/stdlib/javadoc/StdDraw.html.
+
+*8. Temperature Sensor and Demo Code of Conversion from ADC Quanta Values to Temperature:* “Grove - Temperature Sensor V1.2 - Seeed Wiki.” Wiki.seeedstudio.com, wiki.seeedstudio.com/Grove-Temperature_Sensor_V1.2/.
+
+*9. How Temperature has Little Signifigance for the Control of COVID-19:* Mitra, Biswadev, et al. "Temperature screening has negligible value for control of COVID‐19." Emergency Medicine Australasia 32.5 (2020): 867-869.
+
+*10. The Useful Impacts of Online COVID-19 Screening Questionaires During the Pandemic:* Hur, Jian, and Min Cheol Chang. "Usefulness of an online preliminary questionnaire under the COVID-19 pandemic." Journal of Medical Systems 44.7 (2020): 1-2.
+
+*11. Applications of Digital Technology in COVID-19 Pandemic Planning and Response: Whitelaw, Sera, et al. “Applications of Digital Technology in COVID-19 Pandemic Planning and Response.” The Lancet Digital Health, vol. 2, no. 8, 29 June 2020, pp. 435–440, www.thelancet.com/journals/landig/article/PIIS2589-7500(20)30142-4/fulltext, https://doi.org/10.1016/S2589-7500(20)30142-4.
+
+*12. Opportunities and challenges for contactless healthcare services in the post-COVID-19 Era:* Lee, Sang M., and DonHee Lee. “Opportunities and Challenges for Contactless Healthcare Services in the Post-COVID-19 Era.” Technological Forecasting and Social Change, vol. 167, June 2021, https://doi.org/10.1016/j.techfore.2021.120712. Accessed 10 Apr. 2023.
+
+*13. JMusic:* Sorensen, Andrew, and Andrew Brown. “Music, Composition, and the Computer.” Explodingart.com, explodingart.com/jmusic/jmtutorial/x34.html#bing. Accessed 6 Apr. 2023.
 _______________________________________________________________________________________________________________________________________________________________________
