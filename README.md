@@ -1,6 +1,7 @@
 # COVID-19-Screening-Assessment
 _________________________________________________________________________________________________________________________________________________________________________
-**DISCLAIMER**
+**DISCLAIMER**:
+
 If you are in EECS1011 or EECS1021, please do not mimic this project if you are considering to do the optional major project. Doing so will result in plagerism, which is against York University's acedmeic integrity policy.
 _________________________________________________________________________________________________________________________________________________________________________
 **Introduction:** 
