@@ -1,5 +1,8 @@
 # COVID-19-Screening-Assessment
 _________________________________________________________________________________________________________________________________________________________________________
+**DISCLAIMER**
+If you are in EECS1011 or EECS1021, please do not mimic this project if you are considering to do the optional major project. Doing so will result in plagerism, which is against York University's acedmeic integrity policy.
+_________________________________________________________________________________________________________________________________________________________________________
 **Introduction:** 
 This major project involves a COVID-19 self-assessment programmed in MATLAB & Java and the Arduino Uno with its sensors being actuated. The purpose of this program is to check whether or not the user taking the self-assessment, is positive for COVID-19. Moreover, this self-assessment features a temperature sensor to check if the user has a fever. Finally, a self-assessment report is given at the end if the user has no signs of COVID-19. The user is free to show their report at their workplace or institution, as proof that they are healthy.
 _________________________________________________________________________________________________________________________________________________________________________
