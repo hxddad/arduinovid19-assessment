@@ -2,30 +2,7 @@
 _________________________________________________________________________________________________________________________________________________________________________
 **DISCLAIMER**:
 
-If you are in EECS1011 or EECS1021, please do not mimic this project if you are considering to do the optional major project. Doing so will result in plagerism, which is against York University's acedmeic integrity policy.
-_________________________________________________________________________________________________________________________________________________________________________
-**Introduction:** 
-
-
-This major project involves a COVID-19 self-assessment programmed in MATLAB & Java and the Arduino Uno with its sensors being actuated. The purpose of this program is to check whether or not the user taking the self-assessment, is positive for COVID-19. Moreover, this self-assessment features a temperature sensor to check if the user has a fever. Finally, a self-assessment report is given at the end if the user has no signs of COVID-19. The user is free to show their report at their workplace or institution, as proof that they are healthy.
-
-Here's a video of the demo (skip to 3:34):
-https://youtu.be/qraSpWcP9CQ?t=214
-_________________________________________________________________________________________________________________________________________________________________________
-**Context:**
-
-
-This self-assessment consists of a built-in temperature sensor, followed by a series of mostly “Yes or No” questions. Afterwards, a text document (.txt) is saved on the user’s computer, that confirms the user is not infected of COVID-19, including their temperature reading. Compared to COVID-19 screening assessments on the internet, this one includes a temperature sensor, which gives a better outlook of the user’s likelihood of being tested positive/negative for COVID-19. This self-assessment also requires no internet to run, in case if there is any outage. In addition, this is a screening test which eliminates any concerns regarding privacy. Any website or mobile app may have the ability to steal your data and personal information, even if it’s just for a screening test. At last, the report is automatically written in a text document, which takes up less computer memory and space. PDFs and Word Documents (.docx files) tend to take longer to open and require internet (or some subscription) to download and open these files.
-_________________________________________________________________________________________________________________________________________________________________________
-**Technical Requerments/Specifications:**
-
-The system should…
-
-1.	Measure their temperature, to see if they are diagnosed with a fever. If their temperature is greater or equal to 37.5 degrees Celsius, the screening ends and the buzzer sound goes off from the board, beeping 3 times. It lets the user they may be infected with COVID-19.
-2.	Ask a couple of self-assessment questions (mostly “Yes or No” questions). Depending on what the user chooses, the screening test ends, and the buzzer goes off 1-3 times (which again, indicates that they are infected) or proceeds into the next phase of the test. If the buzzer beeps just once, it tells the user they are suspected, to have COVID-19.
-3.	The user will be asked to prompt their name on the command window, for their screening report.
-4.	A text file is automatically created in their desktop, confirming that they there are no signs for COVID-19. This text file includes their name, date of the report generated, and their recorded temperature.
-
+If you are taking EECS1011 or EECS1021, please do not mimic this project if you are considering to do the optional major project. Doing so will result in plagerism, which is against York University's acedmeic integrity policy.
 _______________________________________________________________________________________________________________________________________________________________________
 **Components List:**
 
