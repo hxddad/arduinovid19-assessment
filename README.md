@@ -13,6 +13,8 @@ Here's a video of the demo (skip to 3:34):
 https://youtu.be/qraSpWcP9CQ?t=214
 _________________________________________________________________________________________________________________________________________________________________________
 **Context:**
+
+
 This self-assessment consists of a built-in temperature sensor, followed by a series of mostly “Yes or No” questions. Afterwards, a text document (.txt) is saved on the user’s computer, that confirms the user is not infected of COVID-19, including their temperature reading. Compared to COVID-19 screening assessments on the internet, this one includes a temperature sensor, which gives a better outlook of the user’s likelihood of being tested positive/negative for COVID-19. This self-assessment also requires no internet to run, in case if there is any outage. In addition, this is a screening test which eliminates any concerns regarding privacy. Any website or mobile app may have the ability to steal your data and personal information, even if it’s just for a screening test. At last, the report is automatically written in a text document, which takes up less computer memory and space. PDFs and Word Documents (.docx files) tend to take longer to open and require internet (or some subscription) to download and open these files.
 _________________________________________________________________________________________________________________________________________________________________________
 **Technical Requerments/Specifications:**
