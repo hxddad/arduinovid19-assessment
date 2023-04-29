@@ -5,6 +5,8 @@ ________________________________________________________________________________
 If you are in EECS1011 or EECS1021, please do not mimic this project if you are considering to do the optional major project. Doing so will result in plagerism, which is against York University's acedmeic integrity policy.
 _________________________________________________________________________________________________________________________________________________________________________
 **Introduction:** 
+
+
 This major project involves a COVID-19 self-assessment programmed in MATLAB & Java and the Arduino Uno with its sensors being actuated. The purpose of this program is to check whether or not the user taking the self-assessment, is positive for COVID-19. Moreover, this self-assessment features a temperature sensor to check if the user has a fever. Finally, a self-assessment report is given at the end if the user has no signs of COVID-19. The user is free to show their report at their workplace or institution, as proof that they are healthy.
 
 Here's a video of the demo (skip to 3:34):
@@ -25,6 +27,7 @@ The system should…
 _______________________________________________________________________________________________________________________________________________________________________
 **Components List:**
 
+
 1. A Functional PC or Laptop
 2. 1x Arduino Grove Uno Board
 3. 1x Micro USB Cable
@@ -32,6 +35,7 @@ ________________________________________________________________________________
 5. 1x Grove Temperature Sensor 
 _______________________________________________________________________________________________________________________________________________________________________
 **Additional Material:**
+
 
 Coronavirus has gone down significantly here in Ontario as of April 2023, because we were able to protect each other. COVID-19 is still around and can still affect anybody. This is why it is still our job to protect each other and take precautions to prevent another wave. Hur & Chang (2020) states that a self-report questionnaire can minimize the spread of COVID-19 and potentially helpful to overcome the pandemic. Moreover, contactless healthcare services have been proven to be very effective in the post-pandemic, due to the accelerating technological developments (Lee & Lee, 2021). Digitization is helping companies and institutions overcome obstacles relating to the spread of COVID-19 (Almeida et al., 2020). York University’s YU Screening tool is a good way of screening ourselves of whether to show up on campus or stay home. Whitelaw et al. (2020) states that digital technology has opened many ways to help facilitate and respond the pandemic to combat the more difficult issues. Whitelaw et al. also noted that countries like South Korea have integrated digital technology to combat these challenges, which could be a cause of their curve of infected cases to be flattened. This caused South Korea to have 0.5 COVID-19 deaths per 100,000 people (Whitelaw et al., 2020). 
 _______________________________________________________________________________________________________________________________________________________________________
