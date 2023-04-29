@@ -46,7 +46,7 @@ ________________________________________________________________________________
 
 **1. Volts to Temperature Code:** “Temperature Reading on Matlab and Plotting.” YouTube, Magesh Jayakumar, 28 Nov. 2015, https://youtu.be/gjDzFyzH_ck (Accessed 5 Dec. 2022.)
 
-*Code:*
+Code from video:
 ```
 analog = voltMean/0.0048875;
 b = 3975;
