@@ -8,8 +8,8 @@ This project is a standalone COVID-19 self-assessment tool built using **Java** 
 
 ## 🧩 Components List
 
-- 🖥️ A Functional PC or Laptop  
-- 🔌 1x Arduino Grove Uno Board  
-- 📎 1x Micro USB Cable  
-- ⚙️ 1x Four-Wired Grove Cable  
-- 🌡️ 1x Grove Temperature Sensor  
+- A Functional PC or Laptop  
+- Arduino Grove Uno Board  
+- Micro USB Cable  
+- Four-Wired Grove Cable  
+- Grove Temperature Sensor  
