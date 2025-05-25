@@ -1,6 +1,9 @@
 # COVID-19 Screening Assessment
 
-🎥 **Demo (starts at 3:34):** [Watch on YouTube](https://youtu.be/qraSpWcP9CQ?si=UVgaaN6NWTvHakh6&t=214)
+[🎥 **Demo (starts at 3:34):**](https://youtu.be/qraSpWcP9CQ?si=UVgaaN6NWTvHakh6&t=214)
+
+My (terrible) drawn diagram of this project:
+![diagram](diagram.png)
 
 ## 🩺 Overview
 
